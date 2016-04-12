@@ -1,0 +1,10 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: crontest
+spec:
+  containers:
+  - name: crontest
+    image: lsstsqre/centos:7-systemd
+    securityContext:
+      privileged: true
